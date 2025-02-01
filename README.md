@@ -1,2 +1,3 @@
-# theorym-learn
+# Theorym Learn
+
 An open-science platform.

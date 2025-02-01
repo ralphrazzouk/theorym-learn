@@ -1,0 +1,134 @@
+import { 
+    Definition,
+    Theorem,
+    Lemma,
+    Corollary,
+    Proposition,
+    Claim,
+    Exercise,
+    Problem,
+    Example,
+    Question,
+    Solution,
+    Proof,
+    Remark,
+    Note
+} from '@/components/latex/theorem';
+
+import { CalendarIcon } from "lucide-react"
+
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
+
+
+
+
+# Chapter 1
+ 
+Welcome to Chapter 1!
+
+## Code Blocks
+```js filename="demo.js" {3} copy
+let a = 1;
+
+console.log(a);
+```
+
+## Hover Card Test
+
+
+<HoverCard>
+    <HoverCardTrigger asChild>
+    <Button variant="link">abstract algebra</Button>
+    </HoverCardTrigger>
+    <HoverCardContent className="w-80">
+    <div className="flex justify-between space-x-4">
+        <Avatar>
+        <AvatarImage src="https://github.com/vercel.png" />
+        <AvatarFallback>VC</AvatarFallback>
+        </Avatar>
+        <div className="space-y-1">
+        <h4 className="text-sm font-semibold">@nextjs</h4>
+        <p className="text-sm">
+            Abtract algebra is the study of groups, rings, fields, and modules.
+        </p>
+        <div className="flex items-center pt-2">
+            <CalendarIcon className="mr-2 h-4 w-4 opacity-70" />{" "}
+            <span className="text-xs text-muted-foreground">
+            Joined December 2021
+            </span>
+        </div>
+        </div>
+    </div>
+    </HoverCardContent>
+</HoverCard>
+
+
+## Boxes
+
+<div>
+    <Definition number="1.1" name="First Definition">
+    This is a definition...
+    </Definition>
+
+    <Theorem number="1.2">
+    This is a theorem...
+    </Theorem>
+
+    <Lemma number="1.3">
+    This is a lemma...
+    </Lemma>
+
+    <Corollary number="1.4">
+    This is a corollary...
+    </Corollary>
+
+    <Proposition number="1.5">
+    This is a proposition...
+    </Proposition>
+
+    <Claim number="1.6">
+    This is a claim...
+    </Claim>
+
+    <Exercise number="1.7">
+    This is a exercise...
+    </Exercise>
+
+    <Problem number="1.8">
+    This is a problem...
+    </Problem>
+
+    <Example number="1.9">
+    This is a example...
+    </Example>
+
+    <Question number="1.10">
+    This is a question...
+    </Question>
+
+    <Solution number="1.11">
+    This is a solution...
+    </Solution>
+
+    <Proof number="1.12">
+    This is a proof...
+    </Proof>
+
+    <Remark number="1.13">
+    This is a remark...
+    </Remark>
+    
+    <Note number="1.14">
+    This is a note...
+    </Note>
+</div>
